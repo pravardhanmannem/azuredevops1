@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: pravardhanmannemazuredevops 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pravardhanmannemazuredevops
+  template:
+    metadata:
+      labels:
+        app: pravardhanmannemazuredevops 
+    spec:
+      containers:
+        - name: pravardhanmannemazuredevops 
+          image: myacrx03.azurecr.io/pravardhanmannemazuredevops
+          ports:
+          - containerPort: 80
