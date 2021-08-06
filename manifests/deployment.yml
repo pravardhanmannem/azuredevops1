@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: pravardhanmannemazuredevops 
-          image: myacrx03.azurecr.io/pravardhanmannemazuredevops
+          image: myacrx03.azurecr.io/myhellow-world
           ports:
           - containerPort: 80
